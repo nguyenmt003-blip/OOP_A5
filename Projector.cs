@@ -3,7 +3,6 @@ Nguyễn Minh Tuấn
 202419010 
 */
 using System;
-
 public class Projector : Device
 {
     public int Lumens { get; set; }

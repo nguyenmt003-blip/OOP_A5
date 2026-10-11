@@ -10,7 +10,7 @@ public class LabRoom
     public int Capacity { get; set; }
 
     // Quản lý danh sách đối tượng kết tập
-    private readonly List<Device> _devices = new();
+    private readonly List<Device> _devices = new List<Device>();
     public IReadOnlyList<Device> Devices => _devices.AsReadOnly();
 
     public LabRoom(string roomId, string roomName, int capacity)
@@ -40,7 +40,7 @@ public class LabRoom
         return device != null && _devices.Remove(device);
     }
 
-    public Device? FindDevice(string deviceId)
+    public Device FindDevice(string deviceId)
     {
         return _devices.FirstOrDefault(d => d.DeviceId.Equals(deviceId, StringComparison.OrdinalIgnoreCase));
     }

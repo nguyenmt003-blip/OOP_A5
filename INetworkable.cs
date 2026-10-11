@@ -3,6 +3,7 @@ Nguyễn Minh Tuấn
 202419010 
 */
 // Interface 
+using System;
 public interface INetworkable
 {
     string? IpAddress { get; }

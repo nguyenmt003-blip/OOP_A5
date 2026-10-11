@@ -3,7 +3,6 @@ Nguyễn Minh Tuấn
 202419010 
 */
 using System;
-
 public class Computer : Device, INetworkable // INetworkable (máy tính luôn hỗ trợ mạng)
 {
     public int RamGb { get; set; }
